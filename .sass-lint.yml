@@ -1,0 +1,80 @@
+options:
+  formatter: stylish
+files:
+  include:
+  - src/*/*.s+(a|c)ss
+  - src/*/*/*.s+(a|c)ss
+  - themes/*/*.s+(a|c)ss
+  - themes/*/*/*.s+(a|c)ss
+  ignore:
+  - public/*.*
+  - themes/sass-v3/*.s+(a|c)ss
+rules:
+  class-name-format:
+    - 0
+    - allow-leading-underscore: 0
+      convention: 'strictbem'
+  clean-import-paths: 0
+  force-pseudo-nesting: 0
+  force-element-nesting: 0
+  force-attribute-nesting: 0
+  empty-line-between-blocks: 0
+  extends-before-mixins: 0
+  extends-before-declarations: 0
+  indentation:
+    - 2
+    - size: 2
+  mixins-before-declarations:
+  - 0
+  - exclude:
+    - breakpoint
+    - mq
+    - border-radius
+    - box-shadow
+    - box-pack
+    - display
+  no-color-literals: 0
+  no-css-comments: 0
+  no-debug: 0
+  no-duplicate-properties: 2
+  no-empty-rulesets: 2
+  no-ids: 0
+  no-important: 0
+  no-mergeable-selectors: 2
+  no-misspelled-properties: 0
+  no-transition-all: 0
+  no-qualifying-elements:
+    - 0
+    - allow-element-with-attribute: 0
+  no-url-domains: 0
+  no-url-protocols: 0
+  no-vendor-prefixes: 0
+  no-warn: 0
+  # no-vendor-prefixes:
+  # - 0
+  # -
+  #   excluded-identifiers:
+  #     - webkit
+  #     - moz
+  leading-zero: 0
+  # nesting
+  nesting-depth: 0
+  placeholder-in-extend: 0
+  property-sort-order: 0
+  pseudo-element: 0
+  quotes: 0
+  trailing-semicolon: 0
+  single-line-per-selector: 0
+  shorthand-values:
+    - 0
+  space-around-operator: 0
+  space-before-brace: 2
+  variable-for-property:
+    - 0
+    - # properties:
+      #   - color
+      #   - background-color
+      allowed-functions:
+        - rgba
+        - darken
+  variable-name-format: 0
