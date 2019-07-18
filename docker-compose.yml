@@ -1,0 +1,8 @@
+nginx:
+  container_name: nginx_getThemes
+  image: "nginx:1.15-alpine"
+  volumes:
+    - ./dist:/usr/share/nginx/html:ro
+    - ./nginx.conf/default.conf:/etc/nginx/conf.d/default.conf
+  environment:
+    VIRTUAL_HOST: "sub.domain.tuds"
